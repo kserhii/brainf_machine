@@ -1,11 +1,11 @@
 # BrainF**k program interpreter
 
-![Codewars bage](https://www.codewars.com/users/KSerhii/badges/small)
+![Codewars bage](https://www.codewars.com/users/KSerhii/badges/large)
 
 ### Description
 
-This code realize interpreter for BrainF**k programming language.
-Current interpreter has been written as a solution for one of the [CodeWars challenge](https://www.codewars.com/kata/526156943dfe7ce06200063e).
+Interpreter for BrainF**k programming language written on Elixir.
+This code has been written as a solution for one of the [CodeWars challenge](https://www.codewars.com/kata/526156943dfe7ce06200063e).
 
 ### BrainF**k commands description
 ```
