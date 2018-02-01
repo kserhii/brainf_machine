@@ -53,7 +53,7 @@ __Returns__
 
 ### Tests
 
-Project has tests::
+Project has tests:
 
     mix test
 
