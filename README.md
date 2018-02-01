@@ -4,37 +4,30 @@
 
 ### Description
 
-Interpreter for BrainF**k programming language written on Elixir.
+Interpreter for BrainF**k programming language written in [Elixir](https://elixir-lang.org/).
 This code has been written as a solution for one of the [CodeWars challenge](https://www.codewars.com/kata/526156943dfe7ce06200063e).
 
 ### BrainF**k commands description
-```
-| Command |	C code          | Description
-----------------------------------------------------------------------
-| >       |	++ptr           | increment the data pointer
-| <       |	--ptr           | decrement the data pointer
-| +	      | ++*ptr          | increment the byte at the data pointer
-| -       | --*ptr          | decrement the byte at the data pointer
-| .       |	putchar(*ptr)   | output the byte at the data pointer
-| ,       |	*ptr=getchar()  | accept one byte of input, storing its value
-|         |                 | in the byte at the data pointer
-| [       |	while (*ptr) {  | if the byte at the data pointer is zero,
-|         |                 | then instead of moving the instruction pointer
-|         |                 | forward to the next command, jump it forward
-|         |                 | to the command after the matching ] command
-| ]       |	}               | if the byte at the data pointer is nonzero,
-|         |                 | then instead of moving the instruction pointer
-|         |                 | forward to the next command, jump it back
-|         |                 | to the command after the matching [ command
+
+| Command | C code          | Description                                     |
+|---------|-----------------|-------------------------------------------------|
+| >       | ++ptr           | increment the data pointer                      |
+| <       | --ptr           | decrement the data pointer                      |
+| +       | ++*ptr          | increment the byte at the data pointer          |
+| -       | --*ptr          | decrement the byte at the data pointer          |
+| .       | putchar(*ptr)   | output the byte at the data pointer             |
+| ,       | *ptr=getchar()  | accept one byte of input, storing its value in the byte at the data pointer |
+| [       | while (*ptr) {  | if the byte at the data pointer is zero, then instead of moving the instruction pointer forward to the next command, jump it forward to the command after the matching ] command |
+| ]       | }               | if the byte at the data pointer is nonzero, then instead of moving the instruction pointer forward to the next command, jump it back to the command after the matching [ command |
 
 (C) https://en.wikipedia.org/wiki/Brainfuck
-```
+
 
 ### How to run
 To run the BrainF**k program use the function
-```
+
     BrainfMachine.eval(program, , input \\ "")
-```
+
 
 __Parameters__
 
