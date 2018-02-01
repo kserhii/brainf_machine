@@ -1,0 +1,8 @@
+.idea/
+
+mix.lock
+/_build/
+/cover/
+/deps/
+/doc/
+*.ez
