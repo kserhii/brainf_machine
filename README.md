@@ -56,3 +56,11 @@ __Returns__
     
     iex> BrainfMachine.eval("++++++++[>++++[>++>+++>+++>+<<<<-]>+>+>->>+[<]<-]>>.>---.+++++++..+++.>>.<-.<.+++.------.--------.>>+.>++.")
     "Hello World!\n"
+
+
+### Tests
+
+Project has tests::
+
+    mix test
+
